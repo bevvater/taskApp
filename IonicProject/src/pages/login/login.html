@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      LOGIN
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+	<ion-list>
+
+	  <ion-item>
+	    <ion-input type="text" placeholder="Username" class="app-font-20" [(ngModel)]="model.username"></ion-input>
+	  </ion-item>
+
+	  <ion-item>
+	    <ion-input type="password" placeholder="Password" class="app-font-20" [(ngModel)]="model.password"></ion-input>
+	  </ion-item>
+
+	  <button ion-button full (click)='submitLogin()'>LOGIN</button>
+
+	  <button ion-button full (click)='register()'>REGISTER</button>
+	</ion-list>
+		
+</ion-content>
